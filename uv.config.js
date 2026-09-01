@@ -1,6 +1,6 @@
 self.__uv$config = {
   prefix: '/service/',
-  bare: 'https://YOUR-BARE-SERVER-URL/bare/',
+  bare: 'https://fgegewshgersh-production.up.railway.app/bare/',
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: '/uv.handler.js',
