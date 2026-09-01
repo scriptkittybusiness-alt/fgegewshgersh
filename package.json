@@ -1,16 +1,11 @@
 {
-  "name": "nyx-bare",
+  "name": "school-proxy",
   "version": "1.0.0",
-  "description": "Bare server for Nyx proxy",
-  "main": "server.js",
+  "main": "proxy.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "start": "node proxy.js"
   },
   "dependencies": {
-    "@tomphttp/bare-server-node": "^2.0.6",
-    "express": "^5.2.1"
+    "http-proxy": "^1.18.1"
   }
 }
