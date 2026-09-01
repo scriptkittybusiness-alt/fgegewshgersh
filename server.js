@@ -3,7 +3,7 @@ const http = require('http');
 const { createBareServer } = require('@tomphttp/bare-server-node');
 
 const app = express();
-const server = http.createServer(app);
+const server = http.createServer();
 const bareServer = createBareServer('/bare/');
 
 app.get('/', (req, res) => {
@@ -26,7 +26,7 @@ server.on('request', (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
   console.log('Bare server listening on port', PORT);
 });
